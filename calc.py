@@ -306,14 +306,16 @@ class mathCalculator:
         # print(f" Line307: formula2List() = {formula2List}\n")
         return -2000000  #formula2List[0]
 
+
+
 #  Create an instance of class and test it
+if __name__ == '__main__':
+    clss = mathCalculator()
+    fList = clss.formula2List(clss.mathFormula())   #clss.mathFormula())
+    #print(f" formula2List = {fList}\n")
 
-clss = mathCalculator()
-fList = clss.formula2List(clss.mathFormula())   #clss.mathFormula())
-#print(f" formula2List = {fList}\n")
-
-f1List = clss.solveFormula(fList)
-print(f" Result = {f1List}")
+    f1List = clss.solveFormula(fList)
+    print(f" Result = {f1List}")
 
 
 
